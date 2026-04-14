@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        
+        }
+        #main{
+            text-align:center;
+            margin-left:400px;
+            margin-top:20px;
+            width:500px;
+            height:200px;
+            box-shadow: 2px 2px 5px black;
+            border-radius:10px;
+        }
+        button{
+            width:100px;
+            height:40px;
+            background-color:green;
+            border-width:0px;
+        
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>count down start</h1>
+        <br>
+        <input type="number" id="number" placeholder="Enter Number">
+        <br><br>
+        <button onclick="count()">Count Down</button>
+        <div id="dynamic"></div>
+    </div>
+    <script src="experiment1.js"></script>
+</body>
+</html>
