@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        margin:0px;
+        padding:0px;
+       } 
+       #container{
+        width:600px;
+        text-align:center;
+        margin-left:300px;
+        margin-top:100px;
+        box-shadow: 0px 0px 5px black;
+        border-radius: 5px;
+       }
+       input{
+        padding-left:5px;
+        width:200px;
+        height:30px;
+        margin:10px;
+       }
+       button{
+        width:200px;
+        height:30px;
+        margin:10px;
+        background-color:burlywood;
+        border:0px;
+        border-radius:5px;
+       }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+    <h1>Store Employees Management</h1>
+    <input type="text" id="empname" placeholder="Employee Name">
+    <input type="text" id="empid" placeholder="Employee Id">
+    <input type="number" id="salary" placeholder="Salary">
+    <input type="text" id="position" placeholder="Department">
+    <button onclick="addemployee()">Add Employee</button>
+    <button onclick="display()">Display All Employees</button>
+    <button onclick="filter()">Salary>50000</button>
+    <button onclick="totalsalary()">Total Salary</button>
+    <button onclick="averagesalary()">Average Salary</button>
+    <button onclick="count()">Count By Department</button>
+    <div id="output"></div>
+    </div>
+    <script src="JS.js"></script>
+</body>
+</html>
